@@ -4,7 +4,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 checkout([$class: 'GitSCM', branches: [[name: '*/main']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '123456', url: 'https://github.com/arpitd143/git_jenkins.git']]])
-                sh "ls -lart ./*"
+                echo "checkout"
             }
         }     
     }
