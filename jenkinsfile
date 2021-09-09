@@ -8,5 +8,10 @@ pipeline {
                 echo "$env.BUILD_ID"
             }
         }
+        stage('build number') {
+            steps {
+                echo "$env.BUILD_ID"
+            }
+        }
     }
 }
