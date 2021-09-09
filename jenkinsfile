@@ -1,3 +1,18 @@
+def repository = "https://github.com/arpitd143/git_jenkins.git"
+String refSpecification = "/main"
+
+def getScm(repoUrl, refSpec) {
+    return [
+    $claass    :'GitSCM',
+    branches   :[[name: refSpec]],
+    extensions :[
+        
+    ]
+    ]
+}
+
+
+
 pipeline {
     agent any
 
