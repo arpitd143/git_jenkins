@@ -7,9 +7,9 @@ pipeline {
                 echo "checkout"
             }
         }
-        stage('push') {
+        stage('build contaainer image') {
             steps {
-                echo "push"
+                echo "container image"
             }
         }     
     }
